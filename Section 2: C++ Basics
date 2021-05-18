@@ -1,1 +1,197 @@
 
+// program :-  WAP Area of a Triangle…
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    int b=7,h=5;
+
+    float area;
+
+    area=(float)(h*b)/2;
+    cout<<area;
+
+}
+
+// sum of n natural numbers 
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    int n,sum;
+    cout<<"enter n";
+    cin>>n;
+
+    sum=n*(n+1)/2;
+    cout<<"sum is "<<sum<<endl;
+
+
+}
+
+
+Write a program finding roots of a  quadratic equation…
+#include<cmath>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+   float a,b,c,r1,r2;
+   cout<<"enter a,b,c";
+   cin>>a>>b>>c;
+
+   r1=(-b+sqrt(b*b-4*a*c))/(2*a);
+   r2=(-b-sqrt(b*b-4*a*c))/(2*a);
+
+    cout<<"roots1 are "<<r1<<endl;
+    cout<<"roots2 are "<<r2<<endl;
+
+   return 0;
+
+}
+
+
+//write a program area of circle
+
+#include <iostream>
+using namespace std;
+int main()
+{
+float r,area;
+ cout<<"Enter the Radius";
+ cin>>r;
+ area=3.1425f*r*r; cout<<"Area is "<<area<<endl;
+return 0;
+
+}
+
+Expression 
+• Expression contains operands and operator 
+• Expressions results in a single value 
+• datatype of result of expression is the largest datatype used in expression
+
+
+// find the speed by initialvelocity ,finalvelocity, acceleration
+
+#include <iostream>
+using namespace std;
+int main()
+{
+int u,v,a;
+float speed;
+
+cout<<"enter 3 nos";
+cin>>u>>v>>a;
+
+speed=(v*v-u*u)/(2*a);
+cout<<speed<<"kms";
+
+return 0;
+}
+
+// give 10 40 3
+
+// calculate distance between 2 points 
+// calculate volume of cylinder
+// calculate simple interest
+
+
+Compound Assignment Operators. 
+These are use for writing simple and easy to read statements. 
+If the statement is sum=sum+x; 
+same statement can be written as sum+=x;
+ Compound Assignment works with Arithmetic and Bitwise operators. 
+
+examples: 
+temp+=x; 
+temp-=x; 
+temp*=x;
+ temp/=x; 
+temp%=x; 
+temp<<=x; 
+temp>>=x;
+
+
+Compound Arithmetic Operator
+
+#include <iostream>
+using namespace std;
+int main()
+{
+int sum=10,x=5;
+ sum+=x;
+ cout<<sum<<endl;
+int fact=10,y=5;
+ fact*=y;
+ cout<<fact<<endl;
+return 0;
+}
+
+
+
+
+
+
+
+// overflow 
+Program to Demonstrate Overflow
+#include <iostream>
+using namespace std;
+int main()
+{
+char a=128;
+ cout<<(int)a<<endl;
+char b=127;
+ b++;
+ cout<<(int)b<<endl;
+char c=-129;
+ cout<<(int)c<<endl;
+char d=-128;
+ d--;
+ cout<<(int)d<<endl;
+int e=INT_MAX;
+ e++;
+ cout<<(int)e<<endl;
+return 0;
+}
+
+
+
+// x=128  (x++) ---> -128  (this is called overflow  (clock of datatype if it ends it repeats again back ))
+// x=130   (x++) -->  -125  
+//  x=-128  (x--) -->  127
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char a=128;
+    cout<<(int)a<<endl;
+        
+    char b=127;
+    b++;
+    cout<<(int)b<<endl;
+        
+    char c=129;
+    cout<<(int)c<<endl;
+        
+    char d=-128;
+    d--;
+    cout<<(int)d<<endl;
+        
+    int e=32767; // maximum integer value.
+    e++;
+    cout<<(int)e<<endl;
+        
+    return 0;
+    
+}
+
